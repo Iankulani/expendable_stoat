@@ -11,4 +11,8 @@ cd expendable_stoat
 # How to run
 ```bash
 python expendable_stoat.py
-``` 
+```
+
+# Star History
+
+
