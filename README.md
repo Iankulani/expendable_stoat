@@ -4,13 +4,20 @@ Expendable_Stoat is a modern cybersecurity command and orchestration platform de
 
 The tool integrates seamlessly with a wide array of messaging and collaboration platforms:
 
+
+---
 Discord: Leveraging webhooks and bot APIs, Expendable_Stoat can sit silently in a private server, awaiting commands. The tool parses JSON payloads sent as chat messages, allowing the operator to dispatch complex strings of code or retrieve screenshots and system logs directly within the chat interface. The aesthetic familiarity of Discord reduces suspicion during social engineering engagements, as the target may simply view the activity as standard bot interaction.
 
+---
 Slack: In the corporate environment, Slack is the lifeblood of communication. Expendable_Stoat utilizes Slack’s Real-Time Messaging (RTM) and Events API to create a persistent, stealthy connection. Operators can issue commands via slash commands or private messages, making the traffic indistinguishable from legitimate business communication. This makes it ideal for internal penetration tests where the adversary is assumed to have limited exfiltration paths.
 
+---
 iMessage (Apple Ecosystem): Recognizing the dominance of Apple products in executive suites, Expendable_Stoat includes a module for operating within the iMessage framework. This allows operators to control devices or relay information via Apple’s secure messaging protocol, often bypassing network-based intrusion detection systems (IDS) that struggle to decrypt Apple’s end-to-end encryption.
 
+
+---
 Telegram: Known for its speed and strong encryption, Telegram is a favorite for secure communication. Expendable_Stoat uses Telegram Bots to provide a low-latency, global C2 network. The bot can forward system information, handle multi-factor authentication prompts, and even download files directly from the target machine via the Telegram cloud, offering a high level of convenience and redundancy.
+---
 
 Web Application Interface: For those who prefer a traditional dashboard, the tool offers a rich, responsive web application. This interface provides a birds-eye view of all active agents, complete with geolocation tracking, network topology mapping, and real-time command output. The web UI allows for the creation of "Playbooks"—automated sequences of commands triggered by specific system states.
 
