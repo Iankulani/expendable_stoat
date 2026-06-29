@@ -1,0 +1,86 @@
+version: '3.8'
+
+services:
+  expendable_stoat:
+    image: ${CI_REGISTRY_IMAGE:-expendable_stoat}:${CI_COMMIT_SHORT_SHA:-latest}
+    container_name: expendable_stoat
+    restart: always
+    ports:
+      - "5000:5000"
+      - "8080:8080"
+    environment:
+      - EXPENDABLE_STOAT_ENV=production
+      - DATABASE_URL=postgresql://stoat:${POSTGRES_PASSWORD}@postgres:5432/expendable_stoat
+      - REDIS_URL=redis://redis:6379/0
+      - SECRET_KEY=${SECRET_KEY}
+    volumes:
+      - ./data:/app/.expendable_stoat
+      - ./reports:/app/expendable_stoat_reports
+      - ./deploy:/app/deploy
+      - ./logs:/app/logs
+    networks:
+      - stoat_network
+    depends_on:
+      - postgres
+      - redis
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  postgres:
+    image: postgres:15-alpine
+    container_name: stoat_postgres
+    restart: always
+    environment:
+      - POSTGRES_DB=expendable_stoat
+      - POSTGRES_USER=stoat
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - stoat_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U stoat"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: stoat_redis
+    restart: always
+    volumes:
+      - redis_data:/data
+    networks:
+      - stoat_network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  nginx:
+    image: nginx:alpine
+    container_name: stoat_nginx
+    restart: always
+    volumes:
+      - ./nginx.production.conf:/etc/nginx/nginx.conf:ro
+      - ./ssl:/etc/nginx/ssl:ro
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - stoat_network
+    depends_on:
+      - expendable_stoat
+
+volumes:
+  postgres_data:
+  redis_data:
+
+networks:
+  stoat_network:
+    driver: bridge
