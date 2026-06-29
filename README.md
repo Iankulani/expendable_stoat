@@ -2,7 +2,7 @@
 
 Expendable_Stoat is a modern cybersecurity command and orchestration platform designed to simplify security operations, cyber defense exercises, authorized penetration testing, security research, and cybersecurity education. The platform provides security professionals with a centralized environment for securely managing defensive tools, automation workflows, and col*laborative incident response across multiple communication platforms.
 
-# The tool integrates seamlessly with a wide array of messaging and collaboration platforms:
+The tool integrates seamlessly with a wide array of messaging and collaboration platforms:
 
 Discord: Leveraging webhooks and bot APIs, Expendable_Stoat can sit silently in a private server, awaiting commands. The tool parses JSON payloads sent as chat messages, allowing the operator to dispatch complex strings of code or retrieve screenshots and system logs directly within the chat interface. The aesthetic familiarity of Discord reduces suspicion during social engineering engagements, as the target may simply view the activity as standard bot interaction.
 
