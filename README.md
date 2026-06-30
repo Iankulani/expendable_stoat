@@ -95,4 +95,4 @@ python expendable_stoat.py
 
 # Star History
 
-
+[![Star History Chart](https://api.star-history.com/svg?repos=Iankulani/expendable_stoat&type=Date)](https://star-history.com/#Iankulani/expendable_stoat&Date)
