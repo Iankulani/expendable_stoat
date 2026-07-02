@@ -1,5 +1,14 @@
 # expendable_stoat
 
+[![GitHub stars](https://img.shields.io/github/stars/Iankulani/expendable_stoat?style=for-the-badge&logo=github)](https://github.com/Iankulani/expendable_stoat/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Iankulani/expendable_stoat?style=for-the-badge&logo=github)](https://github.com/Iankulani/expendable_stoat/network)
+[![GitHub watchers](https://img.shields.io/github/watchers/Iankulani/expendable_stoat?style=for-the-badge&logo=github)](https://github.com/Iankulani/expendable_stoat/watchers)
+[![GitHub contributors](https://img.shields.io/github/contributors/Iankulani/expendable_stoat?style=for-the-badge&logo=github)](https://github.com/Iankulani/expendable_stoat/graphs/contributors)
+[![GitHub last commit](https://img.shields.io/github/last-commit/Iankulani/expendable_stoat?style=for-the-badge&logo=git)](https://github.com/Iankulani/expendable_stoat/commits/main)
+[![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)](LICENSE)
+[![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Windows%20%7C%20macOS-blue?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Iankulani/expendable_stoat)
+[![Python](https://img.shields.io/badge/python-3.x-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+
 Expendable_Stoat is a modern cybersecurity command and orchestration platform designed to simplify security operations, cyber defense exercises, authorized penetration testing, security research, and cybersecurity education. The platform provides security professionals with a centralized environment for securely managing defensive tools, automation workflows, and col*laborative incident response across multiple communication platforms.
 
 The tool integrates seamlessly with a wide array of messaging and collaboration platforms:
