@@ -22,7 +22,6 @@ Slack: In the corporate environment, Slack is the lifeblood of communication. Ex
 ---
 iMessage (Apple Ecosystem): Recognizing the dominance of Apple products in executive suites, Expendable_Stoat includes a module for operating within the iMessage framework. This allows operators to control devices or relay information via Apple’s secure messaging protocol, often bypassing network-based intrusion detection systems (IDS) that struggle to decrypt Apple’s end-to-end encryption.
 
-
 ---
 Telegram: Known for its speed and strong encryption, Telegram is a favorite for secure communication. Expendable_Stoat uses Telegram Bots to provide a low-latency, global C2 network. The bot can forward system information, handle multi-factor authentication prompts, and even download files directly from the target machine via the Telegram cloud, offering a high level of convenience and redundancy.**
 ---
