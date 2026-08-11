@@ -10,7 +10,7 @@
 [![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Windows%20%7C%20macOS-blue?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Iankulani/expendable_stoat)
 [![Python](https://img.shields.io/badge/python-3.x-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 
-Expendable_Stoat is a modern cybersecurity command and orchestration platform designed to simplify security operations, cyber defense exercises, authorized penetration testing, security research, and cybersecurity education. The platform provides security professionals with a centralized environment for securely managing defensive tools, automation workflows, and col*laborative incident response across multiple communication platforms.
+Expendable Stoat is a modern cybersecurity command and orchestration platform designed to simplify security operations, cyber defense exercises, authorized penetration testing, security research, and cybersecurity education. The platform provides security professionals with a centralized environment for securely managing defensive tools, automation workflows, and col*laborative incident response across multiple communication platforms.
 
 The tool integrates seamlessly with a wide array of messaging and collaboration platforms:
 
