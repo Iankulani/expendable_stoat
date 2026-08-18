@@ -1,4 +1,4 @@
-3# expendable_stoat
+# expendable_stoat
 
 
 [![GitHub stars](https://img.shields.io/github/stars/Iankulani/expendable_stoat?style=for-the-badge&logo=github)](https://github.com/Iankulani/expendable_stoat/stargazers)
